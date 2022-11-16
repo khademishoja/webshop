@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import ShopPage from "./pages/ShopPage";
 import DetailsPage from "./pages/DetailsPage";
 import { Navbar } from "./components/NavBar/NavBar";
+import Footer from "./components/Footer.js/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/shop" element={<ShopPage />} />
         <Route path="/details/:id" element={<DetailsPage />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
