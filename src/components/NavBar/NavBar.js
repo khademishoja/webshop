@@ -16,7 +16,7 @@ function Navbar() {
         <NavLink to="/shop">Shop</NavLink>
       </div>
       <div>
-        <form class="search-bar">
+        <form className="search-bar">
           <input id="search-bar" type="search" />
         </form>
       </div>

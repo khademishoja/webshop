@@ -1,0 +1,19 @@
+.list {
+  text-align: left;
+  color: #8a8fb9;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(17, 17, 96);
+  color: white;
+}
+.footer li {
+  list-style: none;
+  font-size: small;
+  line-height: 3;
+}
+.alexMorteza {
+  font-size: 30px;
+}
