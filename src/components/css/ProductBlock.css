@@ -1,0 +1,8 @@
+.productShortHand {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonShowDetails {
+  display: flex;
+}
