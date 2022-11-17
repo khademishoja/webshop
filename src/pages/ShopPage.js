@@ -27,6 +27,7 @@ function ProductsPage() {
       {products ? (
         products.map((patientObj) => (
           <ProductBlock
+            id={patientObj.id}
             title={patientObj.title}
             price={patientObj.price}
             description={patientObj.description}
