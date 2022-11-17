@@ -1,0 +1,24 @@
+.styleBtn {
+  background-color: #fb2e86;
+  width: 432px;
+  height: 47px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+}
+input {
+  width: 432px;
+  height: 52px;
+  font-size: 1rem;
+}
+.styleTxt {
+  color: #9096b2;
+}
+a {
+  /* color: #9096b2; */
+  padding-left: 0;
+}
+button {
+  margin: 15px;
+}

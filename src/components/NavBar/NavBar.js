@@ -21,7 +21,9 @@ function Navbar() {
         </form>
       </div>
       <div className="icons">
-        <CiUser className="icon" />
+        <NavLink to="/login">
+          <CiUser className="icon" />
+        </NavLink>
         <FiShoppingCart className="icon" />
         <BsHeart className="icon" />
       </div>
