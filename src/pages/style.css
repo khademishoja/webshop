@@ -59,3 +59,9 @@ img {
 .discription {
   color: #a9acc6;
 }
+
+.shopPageGreatParent {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}

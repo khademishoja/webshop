@@ -1,0 +1,41 @@
+.productBox {
+  /* display: flex;
+  flex-direction: row;
+  align-items: baseline; */
+  width: 20rem;
+  border: 500px;
+  border-color: purple;
+}
+
+.productSnippet {
+  border-color: purple;
+  border: 20px;
+  /* margin: 100px; */
+}
+
+/* .productBox {
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.productSnippet {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.productThumbnail {
+  order: 1;
+  size: 20rem;
+}
+
+.productSummary {
+  order: 2;
+  font-family: "Courier New", Courier, monospace;
+  flex-direction: column;
+}
+
+.Navlink {
+  align-self: flex-end;
+} */
