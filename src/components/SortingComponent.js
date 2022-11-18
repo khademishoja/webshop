@@ -65,8 +65,8 @@ function CategorySorting({ id, title }) {
         <div className="productSummary">
           <p>
             {" "}
-            <NavLink to={`/details/1`}>{title}</NavLink>
-            {/* <NavLink to={`/category/${id}`}>{title}</NavLink> */}
+            {/* <NavLink to={`/details/1`}>{title}</NavLink> */}
+            <NavLink to={`/category/${id}`}>{title}</NavLink>
           </p>
           {/* <NavLink className="Navlink" to={`/details/${id}`}>
               Show Details

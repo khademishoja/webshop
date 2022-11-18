@@ -65,6 +65,8 @@ import SortingComponent from "../components/SortingComponent";
 //   getProductsByRating();
 // }, []);
 
+const constant = 3;
+
 function ProductsPage() {
   const [products, setProducts] = useState("");
   const [category, setCategory] = useState("");
@@ -80,7 +82,7 @@ function ProductsPage() {
       console.log(category);
     }
     getCategories();
-  }, []);
+  }, [constant]);
 
   useEffect(() => {
     async function getProducts() {
@@ -97,7 +99,11 @@ function ProductsPage() {
         <div>
           {category ? (
             category.map((categoryObj) => (
-              <SortingComponent id={categoryObj.id} title={categoryObj.title} />
+              <SortingComponent
+                key={categoryObj.id}
+                id={categoryObj.id}
+                title={categoryObj.title}
+              />
             ))
           ) : (
             <p> Loading.. </p>
@@ -109,17 +115,19 @@ function ProductsPage() {
         <div className="ProductList">
           <h1> Our Products!</h1>
           {products ? (
-            products.map((patientObj) => (
+            products.map((product) => (
               <ProductBlock
-                id={patientObj.id}
-                title={patientObj.title}
-                price={patientObj.price}
-                description={patientObj.description}
-                rating={patientObj.rating}
-                mainImage={patientObj.mainImage}
-                createdAt={patientObj.createdAt}
-                updatedAt={patientObj.updatedAt}
-                category={patientObj.category.title}
+                key={product.id}
+                product={product}
+                // id={patientObj.id}
+                // title={patientObj.title}
+                // price={patientObj.price}
+                // description={patientObj.description}
+                // rating={patientObj.rating}
+                // mainImage={patientObj.mainImage}
+                // createdAt={patientObj.createdAt}
+                // updatedAt={patientObj.updatedAt}
+                // category={patientObj.category.title}
               />
             ))
           ) : (

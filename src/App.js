@@ -6,7 +6,7 @@ import ShopPage from "./pages/ShopPage";
 import DetailsPage from "./pages/DetailsPage";
 import { Navbar } from "./components/NavBar/NavBar";
 import Footer from "./components/Footer.js/Footer";
-// import ProductsByCategory from "./pages/ProductsByCategory";
+import ProductsByCategory from "./pages/ProductsByCategory";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         <Route path="/home" element={<HomePage />} />
         <Route path="/shop" element={<ShopPage />} />
         <Route path="/details/:id" element={<DetailsPage />} />
-        {/* <Route path="/category" element={<ProductsByCategory />} /> */}
+        <Route path="/category/:id" element={<ProductsByCategory />} />
       </Routes>
       <Footer />
     </div>

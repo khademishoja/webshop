@@ -10,20 +10,19 @@ import "./ProductBlock.css";
 //     </div>
 //   );
 // }
-function ProductBlock({ id, title, price, rating, mainImage, category }) {
+function ProductBlock({ product }) {
   return (
     <div className="productBox">
       <div className="productSnippet">
         <div className="productThumbnail">
-          <img src={mainImage} alt="product pic"></img>
+          <img src={product.mainImage} alt="product pic"></img>
         </div>
-
         <div className="productSummary">
-          <p> Name: {title}</p>
-          <p>Price: ${price}</p>
-          <p>Rating: {rating}</p>
-          <p>Category: {category}</p>
-          <NavLink className="Navlink" to={`/details/${id}`}>
+          <p>{product.title}</p>
+          <p>Price: ${product.price}</p>
+          <p>Rating: {product.rating}</p>
+
+          <NavLink className="Navlink" to={`/details/${product.id}`}>
             Show Details
           </NavLink>
         </div>
