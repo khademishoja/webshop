@@ -15,7 +15,7 @@ const DetailsPage = () => {
 
   useEffect(() => {
     const getProduct = async () => {
-      const response = await axios.get(`http://localhost:4000/products/${id} `);
+      const response = await axios.get(`http://localhost:4000/products/${id}`);
       // console.log(response.data);
       setProduct(response.data);
     };
